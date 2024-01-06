@@ -1,0 +1,84 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --blue-color:#34b1c4;
+    --dark-black:#eef0f1;
+    --black-black:rgb(114,114,114)
+}
+
+#Register{
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+
+#Register .register_input_sec{
+   margin: auto 0px auto 20px;
+   max-width:550px;
+}
+#Register .register_input_sec h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+#Register .register_input_sec p{
+    font-size: 16px;
+}
+#Register .register_input_sec input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    background: rgba(0,0,0,0);
+    color: var(--white-color);
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+input:focus-visible{
+    box-shadow: none;
+    border: 1px solid white;
+}
+.register_input_sec .form-select{
+    background: rgba(0,0,0,0);
+    color: var(--white-color);
+    padding: 12px 20px;
+}
+::placeholder{
+    color: white;
+}
+select:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.register_button{
+    border: none;
+    padding: 10px 20px;
+    color: var(--blue-color);
+    background: var(--dark-black);
+    width: 100%;
+
+}
+
+@media screen and (max-width:1200px){
+    #Register .register_input_sec h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:992px){
+    /* .register_input_text{
+        padding: 20px 0px 50px 50px;
+    } */
+    .register_input_sec.col-lg-5 {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    button.register_button {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:576px){
+    #Register .register_input_sec {
+        margin: 0px;
+    }
+}

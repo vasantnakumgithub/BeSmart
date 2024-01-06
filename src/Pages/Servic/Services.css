@@ -1,0 +1,25 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --blue-color:#34b1c4;
+    --dark-black:#eef0f1;
+    --black-black:rgb(114,114,114)
+}
+.services{
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+.services h2{
+    font-size: 40px;
+}
+.services ul{
+    padding: 0px 20px;
+}
+.services button{
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    margin-top: 10px;
+    border-radius: 5px;
+}

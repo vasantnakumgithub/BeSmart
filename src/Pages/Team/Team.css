@@ -1,0 +1,128 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --blue-color:#34b1c4;
+    --dark-black:#eef0f1;
+    --black-black:rgb(114,114,114)
+}
+.Team_icon:before{
+    content: '';
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    background:var(--blue-color);
+}
+.Team_icon:after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    background:var(--blue-color);
+}
+
+
+.carousel-control-next {
+    right: -80px !important;
+}
+.carousel-control-prev {
+    left: -80px !important; 
+}
+.carousel_text {
+    border: 2px solid var(--dark-black);
+    margin-bottom: 20px;
+}
+.carousel-indicators{
+    display: none !important;
+}
+        /* Team_Amazing */
+.Team_Amazing{
+    background-color: var(--dark-black);
+    padding: 80px 0px 50px;
+}
+.Team_line::before{
+    content: '';
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+    background: var(--blue-color);
+    vertical-align: middle;
+}
+.Team_line::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+    background: var(--blue-color);
+    vertical-align: middle;
+}
+
+.Team_Amazing .icon_sec{
+    display: flex;
+    align-items: flex-start;
+}
+.Team_Amazing .img_icon{
+    width: 60px;
+}
+
+.Team_Amazing .Amazing_text_sec{
+    margin: 50px 0px 0px;
+}
+.Team_Amazing .Amazing_text{
+    padding: 0px 20px 10px;
+}
+
+
+.Amazing_text_sec .icon_sec .Amazing_text p{
+    color:var(--black-black);
+}
+
+
+.parallax_photo{
+    background: url('../../Components/Assets/Team/bgphoto.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+.parallax_photo .parallax_bgcolor{
+    background: rgba(0,0,0,0.5);
+    height: 400px;
+}
+.parallax_photo .parallax_bgcolor .text{
+    color: var(--white-color);
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parallax_photo .parallax_bgcolor button{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1024px){
+    .Team_Amazing .Amazing_text {
+        padding: 0px 0px 10px 20px;
+    }
+
+}
+@media screen and (max-width:992px){
+.Team_Amazing .Amazing_text {
+    padding: 0px 0px 10px 20px;
+}
+    .carousel-control-next {
+        right: 0px !important;
+        justify-content: flex-end !important;
+        /* width: 0%; */
+    }
+    .carousel-control-prev {
+        left: 0px !important;
+        justify-content: flex-start !important;
+    }
+}

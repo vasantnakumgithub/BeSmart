@@ -1,0 +1,114 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --blue-color:#34b1c4;
+    --dark-black:#eef0f1;
+    --black-black:rgb(114,114,114)
+}
+.Blog_sec::before{
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background:var(--blue-color);
+    vertical-align: middle;
+}
+.Blog_sec::after{
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background:var(--blue-color);
+    vertical-align: middle;
+}
+
+.card_paragraph p{
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+.Blog_line{
+    content: '';
+    display: inline-block;
+    background-color: var(--black-black);
+    height: 20px;
+    width: 2px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+.Blog_section{
+    background: var(--blue-color);
+    height: 300px;
+    width: 100%;
+}
+.Blog_section .row{
+    height: 300px;
+    color: var(--white-color);
+}
+.Blog_section .row p{
+    font-size: 18px;
+}
+
+.blog_circle_img{
+    background: url('../../Components/Assets/Blog/Alicia.jpg') no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.BLog_line::after{
+    content: '';
+    height: 150px;
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    background: var(--dark-black);
+}
+
+.video_text{
+    margin:0px 0px 0px 40px;
+}
+.video_text button{
+    border: none;
+    background: var(--blue-color);
+    color: var(--white-color);
+    padding: 8px 20px 10px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:992px){
+    .BLog_line::after {
+        display: none;
+    }
+    .video_text {
+        margin:0px;
+    }
+    .row.justify-content-center.d-flex.align-items-center.row {
+        padding: 50px 0px;
+    }
+    .Blog_section .blog_lorem{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .video_text h2{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .card_paragraph p{
+        margin-right: 5px;
+    }
+    .Blog_line{
+        margin-right: 5px;
+    }
+}
+@media screen and (min-width:425px) and (max-width:576px){
+    .card {
+      margin: 0px 50px;
+    }
+  }

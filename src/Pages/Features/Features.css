@@ -1,0 +1,136 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --blue-color:#34b1c4;
+    --dark-black:#eef0f1;
+    --black-black:rgb(114,114,114)
+}
+
+
+.features_icon:before{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: var(--blue-color);
+    display: inline-block;
+    vertical-align: middle;
+}
+.features_icon:after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: var(--blue-color);
+    display: inline-block;
+    vertical-align: middle;
+}
+.bi-star-fill{
+    color: var(--blue-color);
+}
+
+
+.features_card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.features_icon_img{
+    background:var(--blue-color);
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.features_design{
+    background: var(--dark-black);
+    padding: 60px 0px;
+}
+.features_design .text h2{
+    margin-top: 10px;
+    font-size:38px;
+    
+}
+.features_design .text p{
+padding-top: 10px;
+font-size: 17px;
+margin-bottom: 0px;
+color: var(--black-black);
+}
+.features_design .text ul{
+    font-size: 17px;
+    padding-left: 20px;
+    color: var(--black-black);
+    padding-top: 10px;
+}
+.features_design .text button{
+    border: none;
+    background: var(--blue-color);
+    color: var(--dark-black);
+    padding: 13px 23px;
+    border-radius: 5px;
+}
+
+.features_parallax{
+    background: url('../../Components/Assets/Features/parallax.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+.features_parallax .bg_color{
+    background-color: rgba(0,0,0,0.5);
+    height: 500px;
+}
+.features_parallax .bg_color .icon_sec{
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features_parallax .bg_color img{
+    width: 50px;
+}
+.features_parallax .bg_color h2{
+    color: var(--dark-black);
+    margin: 0px;
+    font-size: 34px;
+}
+.features_parallax .bg_color p{
+    color: var(--dark-black);
+    font-style: italic;
+}
+.justify-content-center.text-center.row.row{
+    min-height: 500px;
+}
+
+
+@media (max-width:992px){
+    .features_parallax{
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:768px){
+    .justify-content-center.text-center.row.row {
+        padding: 50px 0px;
+    }
+
+
+
+}
+@media screen and (max-width:575px){
+    .features_card {
+        padding: 0px 50px;
+    }
+    .icon_sec.col-lg-2.col-md-4.col-sm-4 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .features_card {
+        padding: 0px 10px;
+    }
+
+}

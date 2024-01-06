@@ -1,0 +1,152 @@
+:root {
+  --white-color: white;
+  --black-color: black;
+  --blue-color: #34b1c4;
+  --dark-black: #eef0f1;
+  --black-black: rgb(114, 114, 114);
+}
+
+.pricing_line::before {
+  content: "";
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: var(--blue-color);
+  vertical-align: middle;
+}
+.pricing_line::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: var(--blue-color);
+  vertical-align: middle;
+}
+
+.pricing_card .heading{
+background: var(--blue-color);
+color: var(--white-color);
+border-radius: 5px 5px 0px 0px;
+}
+.pricing_card .heading hr{
+    margin: 0px;
+}
+.pricing{
+    font-size: 40px;
+    font-weight: 600;
+}
+.card_body p{
+    margin-bottom: 0px;
+}
+.card_body button{
+    background: var(--blue-color);
+    color: var(--white-color);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card_body button:hover{
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+    background-color: rgba(0,0,0,0);
+    transition: ease-in-out 1s;
+}
+.card_body .register-btn{
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+    background-color: var(--white-color);
+}
+.card_body .register-btn:hover{
+    background-color: var(--blue-color);
+    transition: ease-in-out 1s;
+    color: var(--white-color);
+}
+
+/* CONTACT SECTION */
+
+.contact{
+    background: #393f43;
+    color: var(--white-color);
+}
+.contact .bi-star-fill{
+    color: var(--dark-black);
+}
+.contact_line::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background: var(--dark-black);
+    vertical-align: middle;
+  }
+  .contact_line::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background: var(--dark-black);
+    vertical-align: middle;
+  }
+  .contact p{
+    color: var(--dark-black);
+  }
+  .contact_sec input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: rgba(0,0,0,0);
+    color: var(--white-color);
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .contact_sec input:focus{
+    outline: none;
+  }
+.contact_btn{
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: none;
+  width:200px;
+  padding: 15px 25px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.contact_footer{
+  background-color: var(--black-color);
+  color: var(--dark-black);
+  text-align: center;
+  padding-bottom: 30px;
+}
+.contact_footer h1{
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+.contact_footer h1 span{
+  color: var(--blue-color);
+}
+
+.contact_footer i{
+  font-size: 25px;
+  border: 1px solid white;
+  padding:5px 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.form-floating textarea:focus{
+box-shadow: none;
+border: 1px solid white;
+}
+.form-floating label:focus{
+  background-color: rgba(0,0,0,0);
+  color: black;
+}
+.pricing_card .card {
+  margin-bottom: 30px;
+}
+@media screen and (min-width:425px) and (max-width:576px){
+  /* .pricing_card.text-center.card {
+    margin: 0px 50px;
+} */
+}
